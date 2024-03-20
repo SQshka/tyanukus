@@ -316,28 +316,28 @@ function getImageURI(index) {
   switch (currentDataSet) {
     case "cataclysm":
       result =
-        "../images/cataclysm/" + dataSets[currentDataSet][index] + ".png";
+        "./images/cataclysm/" + dataSets[currentDataSet][index] + ".png";
       break;
     case "effects":
-      result = "../images/buffs/" + dataSets[currentDataSet][index] + ".png";
+      result = "./images/buffs/" + dataSets[currentDataSet][index] + ".png";
       break;
 
     case "games":
-      result = "../images/games/" + dataSets[currentDataSet][index] + ".png";
+      result = "./images/games/" + dataSets[currentDataSet][index] + ".png";
       break;
 
     case "mods":
-      result = "../images/mods-obverse-20.png";
+      result = "./images/mods-obverse-20.png";
       if (index === 1) {
-        result = "../images/mods-reverse-20.png";
+        result = "./images/mods-reverse-20.png";
       }
       if (index === 10) {
-        result = "../images/mods-gurt.png";
+        result = "./images/mods-gurt.png";
       }
       break;
     case "items":
       result =
-        "../images/items/" + dataSets[currentDataSet][index] + ".png";
+        "./images/items/" + dataSets[currentDataSet][index] + ".png";
       break;
   }
 
@@ -350,32 +350,32 @@ function getDescriptionURI(index) {
   switch (currentDataSet) {
     case "cataclysm":
       result =
-        "../descriptions/cataclysm/" + dataSets[currentDataSet][index] + ".txt";
+        "./descriptions/cataclysm/" + dataSets[currentDataSet][index] + ".txt";
       break;
 
     case "effects":
       result =
-        "../descriptions/buffs/" + dataSets[currentDataSet][index] + ".txt";
+        "./descriptions/buffs/" + dataSets[currentDataSet][index] + ".txt";
       break;
 
     case "games":
       result =
-        "../descriptions/games/" + dataSets[currentDataSet][index] + ".txt";
+        "./descriptions/games/" + dataSets[currentDataSet][index] + ".txt";
       break;
 
     case "mods":
-      result = "../descriptions/mods-obverse-20.txt";
+      result = "./descriptions/mods-obverse-20.txt";
       if (index === 1) {
-        result = "../descriptions/mods-reverse-20.txt";
+        result = "./descriptions/mods-reverse-20.txt";
       }
       if (index === 10) {
-        result = "../descriptions/mods-gurt.txt";
+        result = "./descriptions/mods-gurt.txt";
       }
       break;
 
     case "items":
       result =
-        "../descriptions/items/" + dataSets[currentDataSet][index] + ".txt";
+        "./descriptions/items/" + dataSets[currentDataSet][index] + ".txt";
       break;
   }
 

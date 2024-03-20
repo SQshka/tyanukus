@@ -98,7 +98,7 @@ function wheelSketch(_p5) {
         editButton.setAttribute("disabled", "");
         const luck = Math.floor((Math.random() * 20) + 1);
         let rolled = false;
-        const duration = 2200,
+        const duration = 22000,
           correction = data_key(data.length, 2 - selectedKey),
           randomKey = Math.floor(_p5.random(data.length)),
           totalRows =
