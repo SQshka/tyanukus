@@ -95,17 +95,7 @@ const dataSets = {
 
   //Колесо модификаторов
   mods: [
-    "Орёл",
-    "Решка",
-    "Орёл",
-    "Решка",
-    "Орёл",
-    "Решка",
-    "Орёл",
-    "Решка",
-    "Орёл",
-    "Решка",
-    "Ребро!",
+    "Большая елда",
   ],
 
   //Колесо предметов
@@ -319,7 +309,7 @@ function getImageURI(index) {
         "./images/cataclysm/" + dataSets[currentDataSet][index] + ".png";
       break;
     case "effects":
-      result = "./images/buffs/" + dataSets[currentDataSet][index] + ".png";
+      result = "./images/effects/" + dataSets[currentDataSet][index] + ".png";
       break;
 
     case "games":
@@ -327,13 +317,7 @@ function getImageURI(index) {
       break;
 
     case "mods":
-      result = "./images/mods-obverse-20.png";
-      if (index === 1) {
-        result = "./images/mods-reverse-20.png";
-      }
-      if (index === 10) {
-        result = "./images/mods-gurt.png";
-      }
+      result = "./images/mods/" + dataSets[currentDataSet][index] + ".png";
       break;
     case "items":
       result =
@@ -355,7 +339,7 @@ function getDescriptionURI(index) {
 
     case "effects":
       result =
-        "./descriptions/buffs/" + dataSets[currentDataSet][index] + ".txt";
+        "./descriptions/effects/" + dataSets[currentDataSet][index] + ".txt";
       break;
 
     case "games":
@@ -364,14 +348,10 @@ function getDescriptionURI(index) {
       break;
 
     case "mods":
-      result = "./descriptions/mods-obverse-20.txt";
-      if (index === 1) {
-        result = "./descriptions/mods-reverse-20.txt";
-      }
-      if (index === 10) {
-        result = "./descriptions/mods-gurt.txt";
-      }
-      break;
+      case "games":
+        result =
+          "./descriptions/mods/" + dataSets[currentDataSet][index] + ".txt";
+        break;
 
     case "items":
       result =
