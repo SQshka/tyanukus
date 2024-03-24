@@ -75,7 +75,7 @@ const dataSets = {
     "Ледянки",
     "Очки ночного видения",
     "Балончик от насекомых",
-    "Лодка",
+    "Спасательный круг",
   ],
 };
 
@@ -333,7 +333,7 @@ function getDescriptionURI(index) {
 const p5Instance = new p5(wheelSketch);
 
 p5Instance.onAfterSetup = function () {
-  p5Instance.setVideos([ /*["videos/88.mp4", 37], ["videos/87.mp4"], */ ["videos/homyak.mp4", 3], "videos/happy.mp4"] );
+  p5Instance.setVideos([ /*["videos/88.mp4", 37], ["videos/87.mp4"], */ ["videos/homyak.mp4", 3], ["videos/lizon.mp4", 33], ["videos/unuasha.mp4"], ["videos/yugu.mp4"], ["videos/rockyou.mp4"], ["videos/dr.mp4", 10],]);
 };
 
 p5Instance.onEnd = (data, selectedKey) => {
