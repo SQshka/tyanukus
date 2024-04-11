@@ -47,12 +47,17 @@ const dataSets = {
 
   //Колесо ивентов
   effects: [
-    "Готовим на костре",
+    "Готовим на улице",
     "Автокинотеатр",
     "Рыбалочка",
     "Путник ищет путь",
     "Друзья из другого лагеря",
-    "Прогулка на свежем воздухе",
+    "Юный натуралист",
+    "Боевая раскраска",
+    "Песни у костра",
+    "Шалашик",
+    "Фото-охота",
+    "Обзор сухпайка",
   ],
 
   //Кооперативные игры
@@ -63,10 +68,16 @@ const dataSets = {
 
   //Колесо модификаторов
   mods: [
+    "Лучший бросок",
+    "Восьмигранник",
+    "Волшебный кубик",
+    "Четырехугольник",
+    "Бросок с помехой",
+    "Лучший бросок",
+    "Второй шанс",
     "+2",
-    "+4",
     "-2",
-    "-4",
+
 
   ],
 
@@ -333,7 +344,7 @@ function getDescriptionURI(index) {
 const p5Instance = new p5(wheelSketch);
 
 p5Instance.onAfterSetup = function () {
-  p5Instance.setVideos([ /*["videos/88.mp4", 37], ["videos/87.mp4"], */ ["videos/homyak.mp4", 3], ["videos/lizon.mp4", 33], ["videos/unuasha.mp4"], ["videos/yugu.mp4"], ["videos/rockyou.mp4"], ["videos/dr.mp4", 10],]);
+  p5Instance.setVideos([ /*["videos/88.mp4", 37], ["videos/87.mp4"], */ ["videos/homyak.mp4", 3], ["videos/lizon.mp4", 33], ["videos/unuasha.mp4"], ["videos/yugu.mp4"], ["videos/rockyou.mp4"], ["videos/dr.mp4", 10], ["videos/chipi.mp4"], ["videos/ryan.mp4"], ["videos/pedro.mp4", 41], ["videos/тянукус.mp4", 6],["videos/tyan.mp4", 60], ["videos/bang.mp4", 50.5],["videos/chika.mp4", 90.5],["videos/tatar.mp4"],]);
 };
 
 p5Instance.onEnd = (data, selectedKey) => {
