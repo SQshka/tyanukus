@@ -22,7 +22,7 @@ a {
   color: #d1a78e;
 }
 a:hover {
-  color: #ddd;
+  color: #dad6d6;
 }
 .content {
   display: flex;
@@ -186,7 +186,7 @@ button:disabled {
   width: 100%;
   /*height: 150%;*/
   height: 100%;
-  background-color: #06263f;
+  background-color: #751b91;
   perspective: 700px;
 }
 .hero-background-overlay {
