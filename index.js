@@ -57,7 +57,7 @@ const dataSets = {
     "Песни у костра",
     "Шалашик",
     "Фото-охота",
-    "Обзор сухпайка",
+    
   ],
 
   //Кооперативные игры
@@ -82,10 +82,10 @@ const dataSets = {
 
   //Колесо предметов
   items: [
-    "Ледянки",
-    "Очки ночного видения",
-    "Балончик от насекомых",
-    "Спасательный круг",
+    "Варежки",
+    "Зонтик",
+    "Душитель змей",
+    "Фонарик",
   ],
 };
 
@@ -343,9 +343,9 @@ function getDescriptionURI(index) {
 const p5Instance = new p5(wheelSketch);
 
 p5Instance.onAfterSetup = function () {
-  p5Instance.setVideos([ /*["videos/88.mp4", 37], ["videos/87.mp4"], */ ["videos/homyak.mp4", 3], ["videos/lizon.mp4", 33], ["videos/unuasha.mp4"], ["videos/yugu.mp4"], ["videos/rockyou.mp4"], ["videos/dr.mp4", 10], ["videos/chipi.mp4"], ["videos/ryan.mp4"], ["videos/pedro.mp4", 41], ["videos/тянукус.mp4", 6],["videos/tyan.mp4", 60], ["videos/bang.mp4", 50.5],["videos/chika.mp4", 90.5],["videos/tatar.mp4"],]);
+  p5Instance.setVideos([["videos/homyak.mp4", 3], ["videos/lizon.mp4", 33], ["videos/unuasha.mp4"], ["videos/rockyou.mp4"], ["videos/dr.mp4", 10], ["videos/chipi.mp4"], ["videos/ryan.mp4"], ["videos/pedro.mp4", 41], ["videos/тянукус.mp4", 6],["videos/tyan.mp4", 60], ["videos/bang.mp4", 50.5],["videos/chika.mp4", 90.5],["videos/tatar.mp4"],["videos/mcdonald.mp4"],["videos/razeb.mp4"],["videos/agusha.mp4"],["videos/liza_stolb.mp4", 8],]);
 };
-
+// add video : ["video/name.mp4", from ... seconds], ...
 p5Instance.onEnd = (data, selectedKey) => {
   addHistory(`Выпало ${data[selectedKey]} из пресета ${currentDataSet}`);
 };
